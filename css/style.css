@@ -38,10 +38,10 @@ header p {
 
 button {
     padding: 15px;
-    background-color: #373738;
+    background-color: #0080ff;
     color: white;
     font-size: 15px;
-    border-radius: 4px;
+    outline: none;
 }
 
 .logo{
@@ -119,15 +119,32 @@ p{
     grid-area:item3;
 }
 
-h1,h3,h4{
+h1,h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px 160px;
+    text-align: left;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 20px 20px;
 }
 
 h3{
     background-color: #373738;
     padding: 20px;
     color: white;
+}
+
+#tabs, #tabs2{
+    background-color: rgb(253, 253, 253);
+    margin: 15px;
 }
 
 /* for mobile screens */
@@ -157,9 +174,9 @@ h3{
         grid-template-columns: 1fr;
         grid-template-areas: 
         "item4" 
-        "item2"
+        "tabs"
         "item1"
-        "item3"
+        "tabs2"
         ;
     }
 

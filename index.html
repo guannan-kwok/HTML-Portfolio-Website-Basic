@@ -3,8 +3,13 @@
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet">
-         <title>Portfolio Website</title>
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     </head>
+
     <body>
         <header class="navigation">
             <nav class="inline_block">
@@ -27,7 +32,7 @@
             </div>
 
         </section>
-        <!-- Ux Skills section coded using CSS Flex-->
+        <!-- Ux Skills section coded using CSS Flex -->
         <section class="mySkills">
             <h1> My UX Skills</h1>
             <div class="flexContainer">
@@ -48,8 +53,8 @@
                 </div>
             </div>
         </section>
-
-          <!-- Work section styled using css grid -->
+        
+          <!-- Work section styled using css grid 
           <section class="myWork">
             <h1> My Work </h1>
             <div class="workGrid">
@@ -72,6 +77,66 @@
             </div>
             <h3> View All Projects</h3>
           </section>
+          -->
+        
+          <!-- Work section styled using css grid with tabs -->
+          <section class="myWork">
+            <h1> My Work </h1>
+            <div class="workGrid">
+
+                <div class="item1">
+                    <img src="Images/EVA.png" class="projectImage" alt="Website Redesign Image">
+                </div>
+                
+                <div id="tabs">
+                    <h4>EVA Website Redesign</h4>
+                    <ul>
+                      <li><a href="#tabs-1">Preview</a></li>
+                      <li><a href="#tabs-2">Overview</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                      <h2>Prototype Links</h2>
+                      <br></br>
+                      <a href="https://www.figma.com/proto/ZnnMgldFKR1QhPPOsymbVt/Week-2-Prototyping?page-id=158%3A1181&node-id=174%3A487&viewport=503%2C463%2C0.2614574134349823&scaling=scale-down"> Mobile Prototype</a>
+                      <br></br>
+                      <a href="https://www.figma.com/proto/ZnnMgldFKR1QhPPOsymbVt/Week-2---Prototyping?page-id=158%3A1180&node-id=212%3A600&viewport=1356%2C137%2C0.36396893858909607&scaling=min-zoom">Desktop Prototype</a>
+                      <br></br>  <br></br>
+                      <button> View Project</button>
+                    </div>
+                    <div id="tabs-2">
+                      <p>Responsive Website Design for desktop and mobile. Focus on improving content organization.</p>
+                      <button> View Project</button>
+                    </div>
+                </div>
+                
+                <div class="item3">
+                    <img src="Images/ez pick.PNG" class="projectImage" alt="Curbside Pickup App Image">
+                </div>
+
+                <div id="tabs2">
+                    <h4>EZ Pick Curbside Pickup Application</h4>
+                    <ul>
+                      <li><a href="#tabs-1">Preview</a></li>
+                      <li><a href="#tabs-2">Overview</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                      <h2>Prototype Links</h2>
+                      <br></br>
+                      <a href="https://www.figma.com/proto/CpphBstHktrkCn3kfOMjXy/Hi-Fi-Prototype?page-id=143%3A960&node-id=503%3A14290&viewport=-7%2C1344%2C0.30683866143226624&scaling=scale-down"> Final Version</a>
+                      <br></br>
+                      <a href="https://www.figma.com/proto/kkD6s4g0RBsQ6wjREXWCzN/Curbside-Pickup-App?page-id=143%3A960&node-id=151%3A1612&viewport=1095%2C631%2C0.13441161811351776&scaling=scale-down">Mid-Fidelity Prototype</a>
+                      <br></br>  <br></br>
+                      <button> View Project</button>
+                    </div>
+                    <div id="tabs-2">
+                      <p>A pickup app that simplifies the pickup process as current processes are different for every retailer.</p>
+                      <button> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <h3> View All Projects</h3>
+          </section>
 
         <footer>
             <ul>
@@ -82,4 +147,5 @@
             </ul>
         </footer>
     </body>
+    <script src="js/index.js"></script>    
 </html>

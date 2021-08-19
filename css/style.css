@@ -1,0 +1,171 @@
+body{
+    margin:0;
+}
+
+header{
+    background-color: #373738;
+    padding: 15px;
+}
+
+header ul {
+    float: right;
+    color: white;
+}
+
+header li{
+    display: inline-block;
+    padding: 0px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+header p {
+    display: inline-block;
+}
+
+.heroImg{
+    background-color: #EBEBEB;
+    padding: 100px 15px;
+}
+
+.content{
+    max-width:300px;
+    margin:0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+button {
+    padding: 15px;
+    background-color: #373738;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.logo{
+    width:23%;
+    padding:1%;
+    text-align:center;
+}
+
+footer {
+    background-color: #373738;
+    padding: 5px;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0px 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* flexbox */
+
+.flexContainer{
+    display:flex;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 160px;
+}
+
+.flexContainer div{
+    width:33%;
+    padding: 1em;
+    margin: left;
+}
+
+.skillsImage{
+    height: 160px;
+}
+
+/* CSS GRID */
+
+.workGrid{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "item4 item2"
+    "item1 item3";
+    margin: 0px 5px;
+    padding: 160px;
+}
+
+.item1{
+    grid-area:item4;
+}
+
+.item2{
+    grid-area:item2;
+}
+
+.item3{
+    grid-area:item1;
+}
+
+.item4{
+    grid-area:item3;
+}
+
+h1,h3,h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 160px;
+}
+
+h3{
+    background-color: #373738;
+    padding: 20px;
+    color: white;
+}
+
+/* for mobile screens */
+@media only screen and (max-width: 600px){
+    
+    .flexContainer{
+        display:flex;
+        flex-direction:column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .flexContainer div{
+        width:100%;
+        padding: 1em;
+        margin: left;
+    }
+
+    .skillsImage{
+        height: 140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .workGrid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item4" 
+        "item2"
+        "item1"
+        "item3"
+        ;
+    }
+
+    .projectImage{
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -34,14 +34,16 @@ header p {
     padding: 50px;
     background-color: #FFFFFF;
     text-align: center;
+    
 }
 
-button {
+.button {
     padding: 15px;
     background-color: #0080ff;
-    color: white;
     font-size: 15px;
     outline: none;
+    text-decoration: none;
+    color: white !important
 }
 
 .logo{
